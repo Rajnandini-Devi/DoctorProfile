@@ -82,6 +82,67 @@ footer{
 }
 
 .bottom{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 } 
+
+nav{
+  background-color: #007ea7;
+  padding: 10px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn{
+  background-color: #00a8cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover{
+  background-color: #007ea7;
+}
+
+nav a:hover{
+  color: #dff6ff;
+}
+
+@media (max-width: 768px){
+  .profile{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .bottom{
+    grid-template-columns: 1fr;
+  }
+
+  nav ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
