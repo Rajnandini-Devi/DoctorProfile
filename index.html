@@ -1,63 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor Profile W1</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heal Bridge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Doctor's Profile</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Biography</a></li>
-      <li><a href="#">Contact</a></li>
+  
+<header>
+
+  <nav class="navbar">
+
+    <div class="logo">
+  🩺 <span class="logo-text">Heal Bridge</span>
+    </div>
+    <ul class="nav-links">
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li class="dropdown">
+        <a href="#">
+            Menu 
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="profile.html">Doctors</a>
+            </li>
+            <li>
+                <a href="#">Appointments</a>
+            </li>
+            <li>
+                <a href="#">Departments</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="contact.html">Emergency Contact</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
     </ul>
   </nav>
 
-  <main>
-    <section class="profile">
-      <img src="image/Dr.jpg" alt="Doctor's Profile Picture" width="300">
+</header>
 
-      <article class="info">
-        <h2> Dr. James Graham</h2>
-        <p>Cardiologist</p>
-        <p>Appollo Hospital, Texas, USA</p>
-        <br>
-        <div>
-          <p><strong>Speciality:</strong></p>
-          <span class="span">Cardiology</span>
-          <span class="span">Neurology</span>
-          <span class="span">Medicine</span>
-        </div>
-        <p><strong>Experience:</strong> 15 years</p>
-        <p><strong>Languages:</strong> English, Spanish</p>
+<section id="home" class="home">
+  <h1>Our Specialists</h1>
+  <p class="subtitle">
+    Meet our experienced doctors dedicated to providing world-class healthcare.
+  </p>
+<div class="cards">
+  <a href="profile-james.html" class="card-link">
+  <div class="card">
+    <h2>Dr. James Graham</h2>
+    <p><strong>Cardiologist</strong></p>
+    <p>Apollo Hospital, Texas, USA</p>
+    <p><strong>Experience:</strong> 15 Years</p>
 
+  <div class="tags">
+      <span>Cardiology</span>
+      <span>Neurology</span>
+      <span>Medicine</span>
+  </div>
+
+    <button class="btn">Book Appointment</button>
+
+</div>
+</a>
+
+<a href="profile-sarah.html" class="card-link">
+<div class="card">
+  <h2>Dr. Sarah Johnson</h2>
+  <p><strong>Neurologist</strong></p>
+  <p>Mayo Clinic, Minnesota</p>
+  <p><strong>Experience:</strong> 12 Years</p>
+
+  <div class="tags">
+      <span>Neurology</span>
+      <span>Brain Care</span>
+      <span>Research</span>
+  </div>
+
+  <button class="btn">Book Appointment</button>
+
+</div>
+</a>
+
+<div class="card">
+  <h2>Dr. Michael Lee</h2>
+  <p><strong>Orthopedic Surgeon</strong></p>
+  <p>Cleveland Clinic</p>
+  <p><strong>Experience:</strong> 18 Years</p>
+
+  <div class="tags">
+      <span>Orthopedics</span>
+      <span>Joint Care</span>
+      <span>Surgery</span>
+  </div>
+
+<a href="#profile">
+  <button class="btn">Book Appointment</button>
+</a>
+
+</div>
+<div class="card">
+    <h2>Dr. Emily Carter</h2>
+    <p><strong>Pediatrician</strong></p>
+    <p>Boston Children's Hospital, USA</p>
+    <p><strong>Experience:</strong> 10 Years</p>
+
+    <div class="tags">
+        <span>Pediatrics</span>
+        <span>Child Care</span>
+        <span>Vaccination</span>
+    </div>
+
+    <a href="#profile">
         <button class="btn">Book Appointment</button>
-      </article>
-    </section>
+    </a>
 
-    <section class="bottom">
-    <section class="biography">
-      <h3>Biography</h3>
-      <p>Dr. James Graham is a renowned cardiologist with over 15 years of experience in the field. He has dedicated his career to providing exceptional care to patients with heart conditions.</p>
-    </section>
+</div>
+<div class="card">
+    <h2>Dr. David Wilson</h2>
+    <p><strong>Dermatologist</strong></p>
+    <p>Mount Sinai Hospital, New York, USA</p>
+    <p><strong>Experience:</strong> 14 Years</p>
 
-    <section class="contact">
-      <h3>Contact Information</h3>
-      <p><strong>Email:</strong> james@gmail.com</p>
-      <p><strong>Phone:</strong> +1 123-456-7890</p>
-    </section>
-  </section>
-  </main>
-  
-  <footer>
-  <p>&copy; 2026 Doctor's Profile. All rights reserved.</p>
-  </footer>
+    <div class="tags">
+        <span>Dermatology</span>
+        <span>Skin Care</span>
+        <span>Cosmetic Treatment</span>
+    </div>
+
+    <a href="#profile">
+        <button class="btn">Book Appointment</button>
+    </a>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+  <p>
+    © 2026 Heal Bridge. All Rights Reserved.
+  </p>
+</footer>
 
 </body>
 </html>
